@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nelson Ngei Sammy - Seasoned Software Engineer with 4+ years of experience in building scalable web applications using PHP, Laravel, Java, Spring Boot, Node.js, and Vue.js">
+    <meta name="keywords"
+        content="Software Engineer, Full Stack Developer, PHP, Laravel, Java, Spring Boot, Vue.js, Node.js">
+    <meta name="author" content="Nelson Ngei Sammy">
+    <title>Nelson Ngei Sammy | Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Three.js 3D Background -->
+    <canvas id="webglCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Nelson</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-title">Nelson Sammy</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Seasoned Software Engineer with 5+ years of experience building scalable web and enterprise-level
+                    applications.
+                    Passionate about creating elegant solutions to complex problems.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/nelsongei" target="_blank" rel="noopener noreferrer" class="social-link"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:nelson.saammy@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+254719405904" class="social-link" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                    </div>
+                    <div class="code-content">
+                        <pre>
+                            <code>
+                                <span class="code-keyword">class</span>
+                                <span class="code-class">Developer</span>
+                                {
+                                  <span class="code-keyword">constructor</span>() {
+                                    <span class="code-keyword">this</span>.name = <span class="code-string">"Nelson Ngei"</span>;
+                                    <span class="code-keyword">this</span>.role = <span class="code-string">"Software Engineer"</span>;
+                                    <span class="code-keyword">this</span>.experience = <span
+                                    class="code-number">4</span>;
+                                  }
+
+                                  <span class="code-function">getSkills</span>() {
+                                    <span class="code-keyword">return</span> [
+                                      <span class="code-string">"Laravel"</span>, <span class="code-string">"Spring Boot"</span>,
+                                      <span class="code-string">"Vue.js"</span>, <span
+                                    class="code-string">"Node.js"</span>
+                                    ];
+                                  }
+                                }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate software engineer with a proven track record of delivering high-quality,
+                        scalable applications across various industries including aviation, healthcare, and marketing.
+                    </p>
+                    <p>
+                        My expertise spans both backend and frontend development, with a strong focus on building
+                        robust RESTful APIs, integrating third-party systems, and implementing real-time features.
+                        I believe in writing clean, maintainable code and following best practices.
+                    </p>
+                    <p>
+                        Currently serving as Tech Lead at Dragonfly Africa, I lead development teams and architect
+                        solutions that make a real impact. I'm also an active freelancer on Upwork with a 96% job
+                        success score, working with clients primarily in the U.S.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">5+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">96%</h3>
+                            <p class="stat-label">Upwork Success</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">50+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3 class="subsection-title">Education & Certifications</h3>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h4>BSc in Computer Science</h4>
+                                <p>St. Paul's University, Limuru</p>
+                                <span class="education-year">2016 - 2020</span>
+                            </div>
+                        </div>
+                        <!--                    <div class="education-item">-->
+                        <!--                        <div class="education-icon">-->
+                        <!--                            <i class="fas fa-certificate"></i>-->
+                        <!--                        </div>-->
+                        <!--                        <div class="education-details">-->
+                        <!--                            <h4>Diploma in Computer Science</h4>-->
+                        <!--                            <p>St. Paul's University, Limuru</p>-->
+                        <!--                            <span class="education-year">2016 - 2017</span>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="education-details">
+                                <h4>Andela Developer Program</h4>
+                                <p>Advanced Software Development</p>
+                                <span class="education-year">2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span> Skills & Technologies
+            </h2>
+            <div class="skills-grid">
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP & Laravel</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Java & Spring Boot</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">RESTful APIs</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & Storage</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Nginx & Apache</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Digital Ocean</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span> Professional Experience
+            </h2>
+            <div class="timeline">
+                <!-- Tech Lead -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Tech Lead & Software Developer</h3>
+                            <span class="timeline-company">Dragonfly Africa</span>
+                            <span class="timeline-date">Feb 2023 - Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Led development of applications across sectors including aviation, healthcare, and
+                                marketing
+                            </li>
+                            <li>Architected and implemented backend APIs for a mobile market platform supporting
+                                small-scale shopkeepers
+                            </li>
+                            <li>Integrated frontend with robust backend services for a seamless user experience</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Architecture</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lixnet Technologies -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer</h3>
+                            <span class="timeline-company">Lixnet Technologies</span>
+                            <span class="timeline-date">Jan 2022 - Feb 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Developed ERP, HR, and Payroll systems with license manager and Mpesa integration</li>
+                            <li>Implemented REST APIs for data synchronization and payment tracking</li>
+                            <li>Improved business operations through automation and secure data processing</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">ERP Systems</span>
+                            <span class="tag">Payment Integration</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zalego Academy -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer</h3>
+                            <span class="timeline-company">Zalego Academy</span>
+                            <span class="timeline-date">Jan 2020 - Dec 2021</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Built multiple CMS and ERP systems</li>
+                            <li>Developed a real-time chat app with admin dashboards and analytics</li>
+                            <li>Streamlined communication and increased operational transparency</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">CMS</span>
+                            <span class="tag">WebSockets</span>
+                            <span class="tag">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freelancer -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Freelance Developer</h3>
+                            <span class="timeline-company">Upwork</span>
+                            <span class="timeline-date">Jan 2019 - Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Achieved over 96% job success score with clients primarily in the U.S.</li>
+                            <li>Built various web applications and contributed regularly to GitHub</li>
+                            <li>Delivered high-quality solutions across diverse project requirements</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Remote Work</span>
+                            <span class="tag">Client Management</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span> Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities.
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:nelson.saammy@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p>nelson.saammy@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+254719405904" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <p>+254 719 405 904</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/nelsongei" target="_blank" rel="noopener noreferrer"
+                            class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/nelsongei</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" required
+                            placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" required placeholder="Project Inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" required
+                            placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nelson Ngei Sammy. Built with passion and code.</p>
+            <div class="footer-social">
+                <a href="https://github.com/nelsongei" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:nelson.saammy@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+254719405904" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Three.js Library (UMD build for file:// protocol compatibility) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
