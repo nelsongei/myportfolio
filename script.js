@@ -414,6 +414,11 @@ document.querySelectorAll('.skill-item').forEach(item => {
     observer.observe(item);
 });
 
+// Observe project cards
+document.querySelectorAll('.project-card').forEach(card => {
+    observer.observe(card);
+});
+
 // Observe timeline items
 document.querySelectorAll('.timeline-item').forEach(item => {
     observer.observe(item);
@@ -571,6 +576,75 @@ function highlightActiveSection() {
 window.addEventListener('scroll', highlightActiveSection);
 
 // ===================================
+// Swiper Slider Initialization
+// ===================================
+function initSwiper() {
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        speed: 800,
+        effect: 'slide',
+        
+        // Responsive breakpoints
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
+    });
+}
+
+// Initialize components when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initThreeJS();
+    setTimeout(typeEffect, 1000);
+    initSwiper();
+    
+    // Smooth Scroll Navigation for new section
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const offsetTop = target.offsetTop - 70;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+// ===================================
 // Preload Animation
 // ===================================
 window.addEventListener('load', () => {
@@ -590,13 +664,15 @@ if (footerText) {
 // Scroll to Top on Logo Click
 // ===================================
 const logo = document.querySelector('.logo');
-logo.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (logo) {
+    logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
-});
+}
 
 // ===================================
 // Add Hover Effect to Code Window
@@ -618,7 +694,6 @@ if (codeWindow) {
 // ===================================
 console.log('%c👋 Hello, Developer!', 'font-size: 20px; font-weight: bold; color: #00d4ff;');
 console.log('%cLooking at the code? I like your style!', 'font-size: 14px; color: #7c3aed;');
-console.log('%cFeel free to reach out: nelson.saammy@gmail.com', 'font-size: 12px; color: #9ca3af;');
 
 // ===================================
 // Performance Optimization: Debounce Scroll Events
@@ -637,5 +712,4 @@ function debounce(func, wait) {
 
 // Apply debounce to scroll-heavy functions
 const debouncedHighlight = debounce(highlightActiveSection, 100);
-window.removeEventListener('scroll', highlightActiveSection);
 window.addEventListener('scroll', debouncedHighlight);

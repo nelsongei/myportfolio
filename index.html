@@ -22,6 +22,9 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -41,6 +44,7 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -384,12 +388,271 @@
             </div>
         </div>
     </section>
+    
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container projects-container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+            
+            <!-- Swiper Slider -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- WhatsApp AI Shopping Assistant (Major) -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/whatsapp_ai_assistant_mockup_1774694398777.png" alt="WhatsApp AI Assistant" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">WhatsApp AI Shopping Assistant</h3>
+                                <p class="project-description">
+                                    Full conversational commerce system with AI intent parsing, product discovery, cart management, and DPO payment integration.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Laravel</span>
+                                    <span class="project-tag">AI/NLP</span>
+                                    <span class="project-tag">Fintech</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crypto Aggregator -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/crypto_aggregator_mockup_1774694381019.png" alt="Crypto Aggregator" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Crypto Exchange Aggregator</h3>
+                                <p class="project-description">
+                                    Real-time data engineering system aggregating prices from Binance, Kraken, and Coinbase using Kafka and Spark Streaming.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Kafka</span>
+                                    <span class="project-tag">FastAPI</span>
+                                    <span class="project-tag">Big Data</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jaza Gas -->
+                    <!-- <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/jaza_gas_mockup_1774694067788.png" alt="Jaza Gas UI" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Jaza Gas UI Alignment</h3>
+                                <p class="project-description">
+                                    A premium mobile app for gas delivery featuring OpenStreetMap integration, real-time order tracking, and seamless rating system.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Flutter</span>
+                                    <span class="project-tag">Mapping</span>
+                                    <span class="project-tag">Mobile</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Interactive Map Platform -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/interactive_map_mockup_1774694473332.png" alt="Interactive Map" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Interactive Map Platform</h3>
+                                <p class="project-description">
+                                    Gamified environmental platform for tree planting visualization, CO2 offset tracking, and donor engagement analytics.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Web GIS</span>
+                                    <span class="project-tag">Gamification</span>
+                                    <span class="project-tag">JS</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Map</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OCR Scanner -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/ocr_scanner_mockup_1774694084604.png" alt="Industrial OCR Scanner" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Industrial OCR Scanner</h3>
+                                <p class="project-description">
+                                    Industrial-grade production scanning application with real-time KPI metrics and weight-based filtering logic.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Dart</span>
+                                    <span class="project-tag">OCR</span>
+                                    <span class="project-tag">Industrial</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> UI Kit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nitume App -->
+                    <!-- <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/nitume_logistics_mockup_1774694441892.png" alt="Nitume Logistics" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Nitume Logistics App</h3>
+                                <p class="project-description">
+                                    On-demand errand and logistics platform connecting users with local runners for task fulfillment and marketplace services.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Mobile</span>
+                                    <span class="project-tag">Logistics</span>
+                                    <span class="project-tag">API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> App Store</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Product Traceability -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/traceability_system_mockup_1774694458573.png" alt="Supply Chain System" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Product Traceability System</h3>
+                                <p class="project-description">
+                                    Enterprise supply chain tracking for milling operations, monitoring products from manufacturing to distributor outlets.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Supply Chain</span>
+                                    <span class="project-tag">DB Design</span>
+                                    <span class="project-tag">Java</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Enterprise</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field Sales -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/field_sales_mockup_1774694102554.png" alt="Field Sales Dashboard" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Field Sales Dashboard</h3>
+                                <p class="project-description">
+                                    Premium card-based analytics dashboard for van sales management, featuring delivery attribution and stock reconciliation.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Vue.js</span>
+                                    <span class="project-tag">Analytics</span>
+                                    <span class="project-tag">Real-time</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Dashboard</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-commerce Backend -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/ecommerce_backend_mockup_1774694413823.png" alt="E-commerce Backend" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-commerce Backend Design</h3>
+                                <p class="project-description">
+                                    Core commerce infrastructure with complex MySQL schema design, role-based product filtering, and promotions logic.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">MySQL</span>
+                                    <span class="project-tag">Arch</span>
+                                    <span class="project-tag">Performance</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Schema</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Evimeria -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="assets/projects/evimeria_sacco_mockup_1774695225162.png" alt="Evimeria Sacco App" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Evimeria Finance App</h3>
+                                <p class="project-description">
+                                    Comprehensive finance initiative platform for SACCOs, featuring member management, loan applications, and investment tracking.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Fintech</span>
+                                    <span class="project-tag">SACCO</span>
+                                    <span class="project-tag">Mobile</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Platform</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiper Controls -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Experience Section -->
     <section class="experience" id="experience">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-number">03.</span> Professional Experience
+                <span class="title-number">04.</span> Professional Experience
             </h2>
             <div class="timeline">
                 <!-- Tech Lead -->
@@ -491,7 +754,7 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">
-                <span class="title-number">04.</span> Get In Touch
+                <span class="title-number">05.</span> Get In Touch
             </h2>
             <div class="contact-content">
                 <div class="contact-info">
@@ -576,6 +839,9 @@
 
     <!-- Three.js Library (UMD build for file:// protocol compatibility) -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+    <!-- Swiper.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
